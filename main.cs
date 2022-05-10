@@ -23,7 +23,7 @@ class Program
         integerOne = Convert.ToInt32(Console.ReadLine());
 
         // process
-        for (counter = 0; counter <= integerOne; counter ++) total += counter;
+        for (counter = 0; counter <= integerOne; counter++) total += counter;
         {
             Console.WriteLine("");
             Console.WriteLine("The number is " + total);
