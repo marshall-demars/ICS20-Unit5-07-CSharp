@@ -11,31 +11,23 @@ class Program
     {
         // This program tells uses a loop for multiplication
         int integerOne;
-        int integerTwo;
+        var total = 0;
+        int counter = 0;
 
         // input
-        Console.WriteLine("This program uses a loop for multiplication");
+        Console.WriteLine("This program uses a loop for repeated addition");
         Console.WriteLine("");
-        Console.WriteLine("You will need to input 2 integers to be used");
+        Console.WriteLine("You will need to input an integers to be used");
         Console.WriteLine("");
         Console.WriteLine("Please input the first integer:");
         integerOne = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("");
-        Console.WriteLine("Please input the second integer:");
-        integerTwo = Convert.ToInt32(Console.ReadLine());
-
         // process
-        Console.WriteLine("");
-        int counter = 0;
-        var answer = 0;
-        while (counter < integerTwo)
+        for (counter = 0; counter <= integerOne; counter ++) total += counter;
         {
-            Console.WriteLine("Once through loop:" + counter);
-            answer = answer + integerOne;
-            counter++;
+            Console.WriteLine("");
+            Console.WriteLine("The number is " + total);
         }
-        Console.WriteLine("The number is " + answer);
         Console.WriteLine("");
         Console.WriteLine("\nDone.");
     }
